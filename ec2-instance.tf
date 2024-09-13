@@ -14,7 +14,7 @@ resource "aws_instance" "example" {
     user        = "ec2-user"
    # private_key = file("~/.ssh/terraform")
     #private_key =  var.private_key 
-    private_key = file(var.private_key)
+    private_key = file("/var/jenkins_home/workspace/terraform/id_rsa") 
     host        = self.public_ip
   }
 
