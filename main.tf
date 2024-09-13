@@ -7,7 +7,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "j3-test-001 "
+    bucket         = "j3-test-001"
     key            = "terraform.tfstate"  # e.g., environment or project-specific
     region         = "us-east-1"
     encrypt        = true                         # Encrypt the state file
