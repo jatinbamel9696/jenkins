@@ -13,7 +13,8 @@ resource "aws_instance" "example" {
     type        = "ssh"
     user        = "ec2-user"
    # private_key = file("~/.ssh/terraform")
-    private_key =  var.private_key 
+    #private_key =  var.private_key 
+    private_key = var.private_key
     host        = self.public_ip
   }
 
